@@ -1,0 +1,165 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to top, rgba(7, 97, 41, 0.447), rgba(17, 16, 16, 0.694)),
+    url('./snake.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border: 2px solid rgb(143, 179, 23);
+    box-shadow: 0 0 4px 4px rgb(143, 179, 23);
+    padding-bottom: 10px;
+
+}
+
+#how {
+    margin-top: 55px;
+    margin-bottom: 25px;
+    margin-left: 15%;
+    text-align: center;
+    color: rgba(17, 16, 16, 0.839);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: medium;
+    border: 4px solid;
+    background-color: #b4dc3d;
+}
+
+#how:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px 3px rgb(138, 205, 44);
+}
+
+
+footer {
+    text-align: right;
+    padding-right: 13px;
+    padding-top: 40px;
+}
+
+section {
+    margin-right: 50px;
+}
+
+#heading {
+    background-image: linear-gradient(to top, rgba(7, 97, 41, 0.447), rgba(59, 2, 2, 0.516)),
+    url(./snake-header.jpeg);
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: 900px 120px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    margin-top: 8px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.541);
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.319);
+}
+
+/* #heading:hover {
+    box-shadow: 0 0 3px 3px rgb(135, 104, 48);
+} */
+
+article {
+    /* display: flex;
+    align-items: center; */
+    margin: 20px;
+    box-sizing: border-box;
+
+    
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    box-sizing: content-box;
+    margin-right: 45px;
+}
+
+#resetButton {
+    display: none;
+}
+
+#score {
+    display: flex;
+    justify-content: space-around;
+}
+
+.snake {
+    background-color:  rgba(101, 134, 34, 0.812);
+}
+
+.apple {
+    background-color: red;
+    /* background-image: url(./apple.png);
+    background-size: 33px 29px;
+    background-repeat: no-repeat; */
+}
+
+.head {
+    background-color: rgb(27, 111, 27)
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    margin-top: 15px;
+    width: 700px;
+    height: 600px;
+    background-color: rgb(86, 95, 95);
+    border: 2px solid rgba(0, 0, 0, 0.334);
+    box-shadow: 0 0 2px 2px rgb(161, 129, 70);
+}
+
+#board div {
+    border: 1px solid rgba(46, 46, 46, 0.71);
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-right: 10px;
+}
+
+#sideBoard {
+    width: 170px;
+    height: 500px;
+    background-image: linear-gradient(to top, rgba(26, 79, 46, 0.387), rgba(18, 17, 18, 0.22));
+    border: 1px solid rgba(0, 0, 0, 0.517);
+    box-shadow: 0 0 2px 2px rgb(135, 104, 48);
+}
+
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 4px 4px rgb(143, 179, 23);
+}
+select:hover {
+    cursor: pointer;
+    box-shadow: 0 0 4px 4px rgb(143, 179, 23);
+}
+
+
+#scoreText {
+    text-align: center;
+    text-decoration: underline;
+    font-size: large;
+    font-weight: 800;
+    color: rgb(17, 17, 17);
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    font-weight: 800;
+    color: rgb(161, 129, 70);
+}
